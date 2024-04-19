@@ -70,6 +70,8 @@ public class App {
                 JOptionPane.showMessageDialog(null, "No canceles, para salir pulsa la Q");
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(null, "Escribe un numero bobolón!");
+            } catch (IndexOutOfBoundsException e) {
+                JOptionPane.showMessageDialog(null, "Escribe algo coerente mamona");
             }
 
         }
