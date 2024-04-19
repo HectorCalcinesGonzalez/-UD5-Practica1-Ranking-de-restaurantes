@@ -20,7 +20,7 @@ public class GestorRestaurantes {
         listaRestaurante.remove(indiceEmpleado);
     }
 
-    public static void mostrarRestaurante() {
+    public static void mostrarRestaurantes() {
         for (int i = 0; i < listaRestaurante.size(); i++) {
             if (listaRestaurante.get(i) != null) {
                 System.out.println(listaRestaurante.get(i).toString());
