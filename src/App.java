@@ -29,7 +29,7 @@ public class App {
                                 .showInputDialog("Introduca la localización del restaurante: ");
                         String horario = JOptionPane.showInputDialog("Introduzca el horario del restaurante: ");
                         String puntuacionStr = JOptionPane
-                                .showInputDialog("Introduzca la puntuacion del restaurante: ");
+                                .showInputDialog("Introduzca la puntuacion del restaurante (Del 1 al 10): ");
                         float puntuacion = Float.parseFloat(puntuacionStr);
                         GestorRestaurantes
                                 .aniadirRestaurante(new Restaurante(nombre, localizacion, horario, puntuacion));
