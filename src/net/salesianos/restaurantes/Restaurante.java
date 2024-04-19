@@ -3,10 +3,10 @@ package src.net.salesianos.restaurantes;
 public class Restaurante {
     private String nombre;
     private String localizacion;
-    private int horario;
+    private String horario;
     private float puntuacion;
 
-    public Restaurante(String nombre, String localizacion, int horario, float puntuacion) {
+    public Restaurante(String nombre, String localizacion, String horario, float puntuacion) {
         this.nombre = nombre;
         this.localizacion = localizacion;
         this.horario = horario;
@@ -29,11 +29,11 @@ public class Restaurante {
         this.localizacion = localizacion;
     }
 
-    public int getHorario() {
+    public String getHorario() {
         return horario;
     }
 
-    public void setHorario(int horario) {
+    public void setHorario(String horario) {
         this.horario = horario;
     }
 
@@ -45,4 +45,11 @@ public class Restaurante {
         this.puntuacion = puntuacion;
     }
 
+    @Override
+    public String toString() {
+        return "Restaurante [\nnombre=" + nombre + ", \nlocalizacion=" + localizacion + ", \nhorario=" + horario
+                + ", \npuntuacion=" + puntuacion + "]";
+    }
+
+    
 }
