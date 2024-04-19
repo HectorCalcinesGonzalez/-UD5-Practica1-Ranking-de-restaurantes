@@ -31,8 +31,13 @@ public class App {
                         String puntuacionStr = JOptionPane
                                 .showInputDialog("Introduzca la puntuacion del restaurante (Del 1 al 10): ");
                         float puntuacion = Float.parseFloat(puntuacionStr);
-                        GestorRestaurantes
-                                .aniadirRestaurante(new Restaurante(nombre, localizacion, horario, puntuacion));
+                        if (puntuacion > 10 || puntuacion < 0) {
+                            JOptionPane.showMessageDialog(null, "Te dije un numero entre el 1 y el 10 papanatas");
+                        } else {
+                            GestorRestaurantes
+                                    .aniadirRestaurante(new Restaurante(nombre, localizacion, horario, puntuacion));
+                        }
+
                         break;
                     case "2":
                         String indiceStr = JOptionPane
