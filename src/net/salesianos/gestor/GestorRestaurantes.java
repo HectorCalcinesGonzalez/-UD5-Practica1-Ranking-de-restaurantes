@@ -6,11 +6,7 @@ import javax.swing.JOptionPane;
 import src.net.salesianos.restaurantes.*;
 
 public class GestorRestaurantes {
-    private static ArrayList<Restaurante> listaRestaurante;
-
-    public GestorRestaurantes() {
-        listaRestaurante = new ArrayList<>();
-    }
+    private static ArrayList<Restaurante> listaRestaurante = new ArrayList<>();
 
     public static void aniadirRestaurante(Restaurante nuevoRestaurante) {
         listaRestaurante.add(nuevoRestaurante);

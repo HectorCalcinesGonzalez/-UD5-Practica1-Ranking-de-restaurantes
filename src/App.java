@@ -8,10 +8,10 @@ import src.net.salesianos.restaurantes.Restaurante;
 public class App {
     public static void main(String[] args) {
 
-        boolean cerrar = true;
+        boolean seguir = true;
 
         String option = "";
-        while (cerrar) {
+        while (seguir) {
             String menu = """
                     Menú de publicaciones:
                     1. Añadir restaurante
@@ -52,7 +52,7 @@ public class App {
                     GestorRestaurantes.eliminarRestaurante(indiceEli);
                     break;
                 case "Q":
-                    cerrar = false;
+                    seguir = false;
                     break;
 
                 default:
