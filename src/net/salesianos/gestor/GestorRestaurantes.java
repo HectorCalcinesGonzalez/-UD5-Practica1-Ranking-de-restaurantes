@@ -18,9 +18,8 @@ public class GestorRestaurantes {
 
     public static void mostrarRestaurantes() {
         for (int i = 0; i < listaRestaurante.size(); i++) {
-            if (listaRestaurante.get(i) != null) {
-                System.out.println(listaRestaurante.get(i).toString());
-            }
+            JOptionPane.showMessageDialog(null, listaRestaurante.get(i).toString(), "Restaurante " + (i + 1),
+                    JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
