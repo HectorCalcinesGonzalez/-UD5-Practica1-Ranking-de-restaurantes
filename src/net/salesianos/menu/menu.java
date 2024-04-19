@@ -1,6 +1,6 @@
 package src.net.salesianos.menu;
 
-public class menu {
+public class Menu {
     public void mostrarMenu() {
         String menu = """
                 Menú de publicaciones:

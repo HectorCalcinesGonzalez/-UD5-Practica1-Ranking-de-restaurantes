@@ -45,4 +45,11 @@ public class Restaurante {
         this.puntuacion = puntuacion;
     }
 
+    @Override
+    public String toString() {
+        return "Restaurante [\nnombre=" + nombre + ", \nlocalizacion=" + localizacion + ", \nhorario=" + horario
+                + ", \npuntuacion=" + puntuacion + "]";
+    }
+
+    
 }
