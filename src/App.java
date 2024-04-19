@@ -68,6 +68,8 @@ public class App {
                 }
             } catch (NullPointerException e) {
                 JOptionPane.showMessageDialog(null, "No canceles, para salir pulsa la Q");
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Escribe un numero bobolón!");
             }
 
         }
