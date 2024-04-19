@@ -47,9 +47,8 @@ public class Restaurante {
 
     @Override
     public String toString() {
-        return "Restaurante [\nnombre=" + nombre + ", \nlocalizacion=" + localizacion + ", \nhorario=" + horario
-                + ", \npuntuacion=" + puntuacion + "]";
+        return "Restaurante [\nnombre = " + nombre + ", \nlocalizacion = " + localizacion + ", \nhorario = " + horario
+                + ", \npuntuacion = " + puntuacion + "]";
     }
 
-    
 }
