@@ -23,7 +23,7 @@ public class App {
             option = JOptionPane.showInputDialog(menu);
             switch (option) {
                 case "1":
-                    String nombre = JOptionPane.showInputDialog("Introduzca los datos del nuevo restaurante: ");
+                    String nombre = JOptionPane.showInputDialog("Introduzca el nombre del nuevo restaurante: ");
                     String localizacion = JOptionPane.showInputDialog("Introduca la localización del restaurante: ");
                     String horario = JOptionPane.showInputDialog("Introduzca el horario del restaurante: ");
                     String puntuacionStr = JOptionPane.showInputDialog("Introduzca la puntuacion del restaurante: ");
@@ -35,10 +35,12 @@ public class App {
                             .showInputDialog("Introduzca el indice del restaurante que desee modificar: ");
                     int indice = Integer.parseInt(indiceStr);
 
-                    String newNombre = JOptionPane.showInputDialog("Introduzca los datos del restaurante: ");
-                    String newLocalizacion = JOptionPane.showInputDialog("Introduca la localización del restaurante: ");
-                    String newHorario = JOptionPane.showInputDialog("Introduzca el horario del restaurante: ");
-                    String newPuntuacionStr = JOptionPane.showInputDialog("Introduzca la puntuacion del restaurante: ");
+                    String newNombre = JOptionPane.showInputDialog("Introduzca el nuevo nombre del restaurante: ");
+                    String newLocalizacion = JOptionPane
+                            .showInputDialog("Introduca la nueva localización del restaurante: ");
+                    String newHorario = JOptionPane.showInputDialog("Introduzca el nuevo horario del restaurante: ");
+                    String newPuntuacionStr = JOptionPane
+                            .showInputDialog("Introduzca la nueva puntuacion del restaurante: ");
                     float newPuntuacion = Float.parseFloat(newPuntuacionStr);
                     GestorRestaurantes.editarRestaurante(indice, newNombre, newLocalizacion, newHorario, newPuntuacion);
                     break;
